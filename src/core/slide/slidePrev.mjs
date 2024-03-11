@@ -6,7 +6,7 @@ export default function slidePrev(speed = this.params.speed, runCallbacks = true
   const isVirtual = swiper.virtual && params.virtual.enabled;
 
   if (params.loop) {
-    if (animating && !isVirtual && params.loopPreventsSliding) return false;
+    // if (animating && !isVirtual && params.loopPreventsSliding) return false;
 
     swiper.loopFix({ direction: 'prev' });
     // eslint-disable-next-line
