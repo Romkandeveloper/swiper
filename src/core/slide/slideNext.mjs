@@ -10,7 +10,7 @@ export default function slideNext(speed = this.params.speed, runCallbacks = true
   const increment = swiper.activeIndex < params.slidesPerGroupSkip ? 1 : perGroup;
   const isVirtual = swiper.virtual && params.virtual.enabled;
   if (params.loop) {
-    if (animating && !isVirtual && params.loopPreventsSliding) return false;
+    // if (animating && !isVirtual && params.loopPreventsSliding) return false;
     swiper.loopFix({ direction: 'next' });
     // eslint-disable-next-line
     swiper._clientLeft = swiper.wrapperEl.clientLeft;
